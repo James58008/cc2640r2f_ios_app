@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import LeadECG_algorithm
 
 class ViewController: UIViewController {
+    
+    let algorithm = ECG_DataProcess()
     
     func creatButton(title: String, x: Int, y: Int, w: Int, h: Int, action: Selector) {
         let button: UIButton = UIButton(type: .system)
@@ -32,12 +35,18 @@ class ViewController: UIViewController {
     
     var bleLabel: UILabel!
     var verLabel: UILabel!
+    var algVerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // ecg process callback
+        algorithm.setCallBack(callBack: ecgProcessResultCallback)
         // ver
-        verLabel = creatLabel(text: "V1.0", x: 190, y: 800, w: 100, h: 50)
+        verLabel = creatLabel(text: "V1.0", x: 190, y: 800, w: 100, h: 20)
+        // algorithm er
+        algVerLabel = creatLabel(text: "alg:"+algorithm.getVer(), x: 170, y: 820, w: 100, h: 20)
+        
         // 创建按键
         creatButton(title: "噪声测试", x: 15, y: 200, w: 100, h: 50, action: #selector(noisButtonCallback))
         creatButton(title: "单导测试", x: 155, y: 200, w: 100, h: 50, action: #selector(ecgI_Callback))
@@ -59,6 +68,11 @@ class ViewController: UIViewController {
     // 6导测试
     @objc func ecg6_Callback() {
         bleLabel.text = "6 ecg"
+    }
+    
+    // ecg信号处理结果
+    func ecgProcessResultCallback(i: [Double], ii: [Double], iii: [Double], avr: [Double], avl: [Double], avf: [Double]) {
+        
     }
 
 
