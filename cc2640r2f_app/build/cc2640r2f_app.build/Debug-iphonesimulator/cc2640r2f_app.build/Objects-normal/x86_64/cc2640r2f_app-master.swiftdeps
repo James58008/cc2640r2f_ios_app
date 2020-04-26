@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2 (swiftlang-1103.0.25.1 clang-1103.2.32.5)"
+options: "213da7c798b8397add6bb0ec1a9519ba"
+build_time: [1587876034, 573115000]
+inputs:
+  "/Users/jamesli/Desktop/XcodePrj/cc2640r2f_ios_app/cc2640r2f_app/cc2640r2f_app/ViewController.swift": [1587876034, 490825888]
+  "/Users/jamesli/Desktop/XcodePrj/cc2640r2f_ios_app/cc2640r2f_app/cc2640r2f_app/AppDelegate.swift": [1587871155, 304393049]
+  "/Users/jamesli/Desktop/XcodePrj/cc2640r2f_ios_app/cc2640r2f_app/cc2640r2f_app/SceneDelegate.swift": [1587871155, 316795878]
