@@ -21,7 +21,7 @@ public class Draw1GridView: UIView {
         let lineHorPath = UIBezierPath.init()
         
         UIColor.lightGray.setStroke()
-        lineHorPath.lineWidth = 1.0
+        lineHorPath.lineWidth = 0.4
         let BigGrid = 25
         let LittleGrid = 5
         for i in 0...10 {
@@ -33,7 +33,7 @@ public class Draw1GridView: UIView {
             lineHorPath.addLine(to: CGPoint.init(x: i*BigGrid, y: 200))
         }
         lineHorPath.stroke()
-        lineHorPath.lineWidth = 0.5
+        lineHorPath.lineWidth = 0.1
         for i in 0...50 {
             lineHorPath.move(to: CGPoint.init(x: 0, y: i*LittleGrid))
             lineHorPath.addLine(to: CGPoint.init(x: 390, y: i*LittleGrid))
