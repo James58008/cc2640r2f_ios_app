@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		GWUioxIm7duHNE5ph33bx7M0Sqs=
+		aVpajv1LBxmYaFxAS+SvHlY1cx0=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		o0BkDmD8av01oJb82emcD5Pq6sk=
+		BKJFq4W+kuYFTELLkT/VCVejMy0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		mw1Uk9PmfZnaYhOQBcsHVZgg5QQ=
+		UOuFJ6MHcPT1qIu6ugDGD9LjxF0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,63 +26,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		m6XDDKE5EK/ri/RVtYfcuECeXb8=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/CryptoSwift</key>
-		<data>
-		WXsodRvANz7ZdOHW69Kzu1/Lc/s=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/Info.plist</key>
-		<data>
-		axQwbopHVf3ErtvmiVH31V4SNiA=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/_CodeSignature/CodeResources</key>
-		<data>
-		Nzy+K16D1sSuIZvNfoXHr9jIpq8=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/Info.plist</key>
-		<data>
-		HpX8uXZ6NhEFJGsdXAX7E8eGcP8=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/LeadECG_algorithm</key>
-		<data>
-		fRW3YBbnbxYrBlyC90kUcuQpENw=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeResources</key>
-		<data>
-		p4fi1uLSzvvMAlpHFJ+asBPIbxk=
-		</data>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<data>
-		rrAp64iPhUL40XQR7JlGMDIZaMA=
-		</data>
-		<key>Frameworks/libswiftCoreFoundation.dylib</key>
-		<data>
-		P4IT9OqWCWZ8FyecMxQHhM6h4G8=
-		</data>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<data>
-		JoDjsNQXE3z2hogOouALtjw8m/g=
-		</data>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<data>
-		XJGVexKAsC220QzBQHwL6VS/whc=
-		</data>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<data>
-		xYRhwsR1eeXatGDr8WNyVj93krw=
-		</data>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<data>
-		WclOTQyDfPDOGEjZboBz+yfxGVQ=
-		</data>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<data>
-		W4v+YlroD8+v27M4zKa/3r9eqdA=
+		vHF7GqTwbzp48p7B2iIFZVwXsOU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vTUElMOG7/A4ySEcMR9AWAEC8vA=
+		vRi7NfUTJBpr0woH2OW4pEVnehM=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -95,7 +43,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gf+NOyW9oyeNQj86E4yAfIK7XQq7Ro9VLVujtmvuFKk=
+			OWPKG33Z33MPN8ejSdplOCIbGdXhV1r4BPPreTWpvv0=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -109,14 +57,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bEmQGytAipi01sP/VxCWHYVBdkjCThI1aami9TWr1Kg=
+			D5FRXfq8iV68hCs63OF4CLPOdbAxOYvwMcDirLEI9wA=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			StLCn5Visg1/rK5ZsI1lmznegVp4TfMJtYNaHlfSU/k=
+			ryYuZ27q9WWiodJ9OnS0Q0+lJGhGwAIUINBGf9mAbSc=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -130,98 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JYwqdMmG89gRzOygP8jsIBoI4BRW2tlB8h8KtGdF7DQ=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/CryptoSwift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WYx5uyOqVu1uhoPS6Sn+VhNlss5NUEDpByY0G0oHHUs=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qCTdwz0QI/ATQl/3qrZ3oYguvDbOBeUyhYtyOdegY68=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+nj9Mwxa/JzEEtBdapjStZ14YlkBcFc1jcZE+IRwNVg=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5b/Gqke9nzOWU6YUvuuVZRPEEd4wUh1/KDAYrTafwgI=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/LeadECG_algorithm</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YldDZMY9IOvv9auBJnMjr3rHQklWx+wpc3K5m6C1p3E=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bIXAPR90b6laDGadvAtSPHvVl2yGs8KNRt3bYArgsfM=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SVCZK2UG9ihtWggcfIn/i94g//jyC4cI73gURFdHavA=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreFoundation.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/wz85l+DKAaQ7/BS+77vK5X998iA4Lwz+DGJ95g4kZw=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6UmJ5TyRJe3XQ2ANvUh7wapWfH50HDaC5DE8brYBB5U=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Fy3X7nPk7IgG+lCSWKHuMHgGz6Yi56UOKe6XajzinhU=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZSH1H7EN5E4TGGB63N2+7rR7N+rDR1LBmkhABOf9RVQ=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6SyHvvl3dAOzLH6bFEeF41TPcUHS3iYOdFK7I0FEU6M=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zLWBGbdbTQk6chVChX0c8CFwhq8ogd9K00QEU5AufEY=
+			4/jtSjSGF0LBZebSMo9pKwGvSWrxaKnPYGsCSagvu7E=
 			</data>
 		</dict>
 	</dict>

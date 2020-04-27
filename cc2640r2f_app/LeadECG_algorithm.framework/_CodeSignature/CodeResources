@@ -6,15 +6,15 @@
 	<dict>
 		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
 		<data>
-		WXsodRvANz7ZdOHW69Kzu1/Lc/s=
+		dbAXNanbe7KI6MoPlzwDvs2A6ek=
 		</data>
 		<key>Frameworks/CryptoSwift.framework/Info.plist</key>
 		<data>
-		axQwbopHVf3ErtvmiVH31V4SNiA=
+		3rY79q52cD9R5IerR/tFEoNcEcg=
 		</data>
 		<key>Frameworks/CryptoSwift.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Nzy+K16D1sSuIZvNfoXHr9jIpq8=
+		QmVEr3fBkl1LYDfH3RcJ+SXTxSA=
 		</data>
 		<key>Headers/LeadECG_algorithm-Swift.h</key>
 		<data>
@@ -26,31 +26,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HpX8uXZ6NhEFJGsdXAX7E8eGcP8=
+		47vEOwOLq15XFdiZ7jNkbRg4t2s=
 		</data>
-		<key>Modules/LeadECG_algorithm.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		6gSuWPPU/DMBnhTPFs6/XLsBVjw=
+		DQqTxmPfWt9TYHnFDz8mVeBajYw=
 		</data>
-		<key>Modules/LeadECG_algorithm.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		6gSuWPPU/DMBnhTPFs6/XLsBVjw=
+		DQqTxmPfWt9TYHnFDz8mVeBajYw=
 		</data>
-		<key>Modules/LeadECG_algorithm.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		rAelzYQ4NnzczDk8FrprDdgQ6xA=
+		ZT0++GVzD2bYH7CHu1CZUVKOuik=
 		</data>
-		<key>Modules/LeadECG_algorithm.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		egyhmJOUM3H07StfOscWwxAejvg=
+		rvk8z2BAt/cEuMrkjDcv/TRR1LY=
 		</data>
-		<key>Modules/LeadECG_algorithm.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		rAelzYQ4NnzczDk8FrprDdgQ6xA=
+		ZT0++GVzD2bYH7CHu1CZUVKOuik=
 		</data>
-		<key>Modules/LeadECG_algorithm.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		egyhmJOUM3H07StfOscWwxAejvg=
+		rvk8z2BAt/cEuMrkjDcv/TRR1LY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,33 +63,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WXsodRvANz7ZdOHW69Kzu1/Lc/s=
+			dbAXNanbe7KI6MoPlzwDvs2A6ek=
 			</data>
 			<key>hash2</key>
 			<data>
-			WYx5uyOqVu1uhoPS6Sn+VhNlss5NUEDpByY0G0oHHUs=
+			OGHwxXysGXo09f3mU/NdfmV44epXXHVJ+hnmfjt/rlI=
 			</data>
 		</dict>
 		<key>Frameworks/CryptoSwift.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			axQwbopHVf3ErtvmiVH31V4SNiA=
+			3rY79q52cD9R5IerR/tFEoNcEcg=
 			</data>
 			<key>hash2</key>
 			<data>
-			qCTdwz0QI/ATQl/3qrZ3oYguvDbOBeUyhYtyOdegY68=
+			kFIG80A1kT/mEFqa/CvjHa21KA6W+5nNY4ES3hGmcfI=
 			</data>
 		</dict>
 		<key>Frameworks/CryptoSwift.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Nzy+K16D1sSuIZvNfoXHr9jIpq8=
+			QmVEr3fBkl1LYDfH3RcJ+SXTxSA=
 			</data>
 			<key>hash2</key>
 			<data>
-			+nj9Mwxa/JzEEtBdapjStZ14YlkBcFc1jcZE+IRwNVg=
+			GQ8LgYlrSwKwGOS/m8HpJ3WKb/ljb3ubELLCaBbQkvU=
 			</data>
 		</dict>
 		<key>Headers/LeadECG_algorithm-Swift.h</key>
@@ -114,70 +114,70 @@
 			htHtg68qsjP6ZBOy+FqGqa/QsvieYksdBGxUQmh9Z6s=
 			</data>
 		</dict>
-		<key>Modules/LeadECG_algorithm.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6gSuWPPU/DMBnhTPFs6/XLsBVjw=
+			DQqTxmPfWt9TYHnFDz8mVeBajYw=
 			</data>
 			<key>hash2</key>
 			<data>
-			WQfPV/+slRG7QiCJIj6NwEDL9K3HJHff9szMU0C98J0=
+			FnBkry9QFVtRtoTrscpep9Sq3jK6eSDckThnIw2v4iE=
 			</data>
 		</dict>
-		<key>Modules/LeadECG_algorithm.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6gSuWPPU/DMBnhTPFs6/XLsBVjw=
+			DQqTxmPfWt9TYHnFDz8mVeBajYw=
 			</data>
 			<key>hash2</key>
 			<data>
-			WQfPV/+slRG7QiCJIj6NwEDL9K3HJHff9szMU0C98J0=
+			FnBkry9QFVtRtoTrscpep9Sq3jK6eSDckThnIw2v4iE=
 			</data>
 		</dict>
-		<key>Modules/LeadECG_algorithm.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rAelzYQ4NnzczDk8FrprDdgQ6xA=
+			ZT0++GVzD2bYH7CHu1CZUVKOuik=
 			</data>
 			<key>hash2</key>
 			<data>
-			wHiMqTpLVvFFMLLKTEATEVVhr2v996MfLCt+XIBklSM=
+			McrMuaaz/lsXznlhWhwXZbmM43fHscyv8zIWsj6TOKQ=
 			</data>
 		</dict>
-		<key>Modules/LeadECG_algorithm.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			egyhmJOUM3H07StfOscWwxAejvg=
+			rvk8z2BAt/cEuMrkjDcv/TRR1LY=
 			</data>
 			<key>hash2</key>
 			<data>
-			nZMspu8YI8VDCwTTa3+ZNF7czD3hAeIXRkJS1xlDo0s=
+			56CAgF0+KlDCpFoOUVikoE2abMEcebD5b/iIXH0zddg=
 			</data>
 		</dict>
-		<key>Modules/LeadECG_algorithm.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rAelzYQ4NnzczDk8FrprDdgQ6xA=
+			ZT0++GVzD2bYH7CHu1CZUVKOuik=
 			</data>
 			<key>hash2</key>
 			<data>
-			wHiMqTpLVvFFMLLKTEATEVVhr2v996MfLCt+XIBklSM=
+			McrMuaaz/lsXznlhWhwXZbmM43fHscyv8zIWsj6TOKQ=
 			</data>
 		</dict>
-		<key>Modules/LeadECG_algorithm.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/LeadECG_algorithm.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			egyhmJOUM3H07StfOscWwxAejvg=
+			rvk8z2BAt/cEuMrkjDcv/TRR1LY=
 			</data>
 			<key>hash2</key>
 			<data>
-			nZMspu8YI8VDCwTTa3+ZNF7czD3hAeIXRkJS1xlDo0s=
+			56CAgF0+KlDCpFoOUVikoE2abMEcebD5b/iIXH0zddg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
