@@ -264,7 +264,8 @@ SWIFT_CLASS("_TtC13cc2640r2f_app14DrawSingleView")
 SWIFT_CLASS("_TtC13cc2640r2f_app14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;
-- (void)buttonCallbackI_II;
+- (void)buttonCallback_I;
+- (void)buttonCallback_II;
 - (void)buttonCallback_III;
 - (void)buttonCallback_aVR;
 - (void)buttonCallback_aVL;

@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.2 (swiftlang-1103.0.25.1 clang-1103.2.32.5)"
 options: "1c7e47c98dfde08d5dfbe24e8dd6c622"
-build_time: [1587995032, 947747000]
+build_time: [1590412424, 130438000]
 inputs:
-  "/Users/jamesli/Desktop/XcodePrj/cc2640r2f_ios_app/cc2640r2f_app/cc2640r2f_app/ViewController.swift": [1587995032, 872329186]
+  "/Users/jamesli/Desktop/XcodePrj/cc2640r2f_ios_app/cc2640r2f_app/cc2640r2f_app/ViewController.swift": [1590412424, 50055228]
   "/Users/jamesli/Desktop/XcodePrj/cc2640r2f_ios_app/cc2640r2f_app/cc2640r2f_app/BleManager.swift": [1587969446, 785046834]
   "/Users/jamesli/Desktop/XcodePrj/cc2640r2f_ios_app/cc2640r2f_app/cc2640r2f_app/1LeadECG.swift": [1587994688, 157152083]
   "/Users/jamesli/Desktop/XcodePrj/cc2640r2f_ios_app/cc2640r2f_app/cc2640r2f_app/AppDelegate.swift": [1587959427, 97490882]

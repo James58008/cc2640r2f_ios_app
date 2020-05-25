@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var queue = Queue<ECG_Data>()
     
     var drawView1: DrawSingleView?
-    var drawView2: DrawSingleView?
+//    var drawView2: DrawSingleView?
     
     let algorithm = ECG_Interface()
     let ble = BleManager()
@@ -75,19 +75,23 @@ class ViewController: UIViewController {
         //波形显示窗口
         drawView1 = DrawSingleView.init(frame: CGRect.init(x: 10, y: 100, width: 390, height: 200))
         self.view.addSubview(drawView1!)
-        drawView2 = DrawSingleView.init(frame: CGRect.init(x: 10, y: 310, width: 390, height: 200))
-        self.view.addSubview(drawView2!)
+//        drawView2 = DrawSingleView.init(frame: CGRect.init(x: 10, y: 310, width: 390, height: 200))
+//        self.view.addSubview(drawView2!)
         // 窗口波形显示信息
         view1MsgLabel = creatLabel(text: "I", x: 20, y: 105, w: 100, h: 20)
-        view2MsgLabel = creatLabel(text: "II", x: 20, y: 315, w: 100, h: 20)
+//        view2MsgLabel = creatLabel(text: "II", x: 20, y: 315, w: 100, h: 20)
         // 窗口波形单位
-        viewRulerLabel = creatLabel(text: "10mm/mV 25mm/S", x: 135, y: 520, w: 200, h: 20)
+        let cnt = 205
+        viewRulerLabel = creatLabel(text: "10mm/mV 25mm/S", x: 135, y: 520-cnt, w: 200, h: 20)
         // 创建按键
-        creatButton(title: "显示I & II", x: 15, y: 560, w: 100, h: 50, action: #selector(buttonCallbackI_II))
-        creatButton(title: "显示III", x: 155, y: 560, w: 100, h: 50, action: #selector(buttonCallback_III))
-        creatButton(title: "显示aVR", x: 295, y: 560, w: 100, h: 50, action: #selector(buttonCallback_aVR))
-        creatButton(title: "显示aVL", x: 15, y: 630, w: 100, h: 50, action: #selector(buttonCallback_aVL))
-        creatButton(title: "显示aVF", x: 155, y: 630, w: 100, h: 50, action: #selector(butonCallback_aVF))
+        creatButton(title: "显示I", x: 15, y: 560-cnt, w: 100, h: 50, action: #selector(buttonCallback_I))
+        creatButton(title: "显示II", x: 155, y: 560-cnt, w: 100, h: 50, action: #selector(buttonCallback_II))
+        creatButton(title: "显示III", x: 295, y: 560-cnt, w: 100, h: 50, action: #selector(buttonCallback_III))
+        
+        creatButton(title: "显示aVR", x: 15, y: 630-cnt, w: 100, h: 50, action: #selector(buttonCallback_aVR))
+        creatButton(title: "显示aVL", x: 155, y: 630-cnt, w: 100, h: 50, action: #selector(buttonCallback_aVL))
+        creatButton(title: "显示aVF", x: 295, y: 630-cnt, w: 100, h: 50, action: #selector(butonCallback_aVF))
+        
         // ble
         ble.logPrint = { (backMsg) in
             self.bleMsg(msg: backMsg)
@@ -102,29 +106,34 @@ class ViewController: UIViewController {
         ble.bleManagerInit() // 打开ble
 
     }
-    // 显示I&II
-    @objc func buttonCallbackI_II() {
+    // 显示I
+    @objc func buttonCallback_I() {
         displayMode = 0
         view1MsgLabel.text = "I"
     }
+    // 显示II
+    @objc func buttonCallback_II() {
+        displayMode = 1
+        view1MsgLabel.text = "II"
+    }
     // 显示III
     @objc func buttonCallback_III(){
-        displayMode = 1
+        displayMode = 2
         view1MsgLabel.text = "III"
     }
     // 显示aVR
     @objc func buttonCallback_aVR() {
-        displayMode = 2
+        displayMode = 3
         view1MsgLabel.text = "aVR"
     }
     // 显示aVL
     @objc func buttonCallback_aVL() {
-        displayMode = 3
+        displayMode = 4
         view1MsgLabel.text = "aVL"
     }
     // 显示aVF
     @objc func butonCallback_aVF() {
-        displayMode = 4
+        displayMode = 5
         view1MsgLabel.text = "aVF"
     }
     
@@ -212,21 +221,26 @@ class ViewController: UIViewController {
             points_avl.append(CGPoint.init(x: Double(i)/5, y: 100 - disBuff_avl[Int(i)]))
             points_avf.append(CGPoint.init(x: Double(i)/5, y: 100 - disBuff_avf[Int(i)]))
         }
-        drawView2?.curveView?.setFlg(val: displayBuffCount)
-        drawView2?.points = points_ii
-        if displayMode == 0 { // I & II
+//        drawView2?.curveView?.setFlg(val: displayBuffCount)
+//        drawView2?.points = points_ii
+        if displayMode == 0 { // I
             drawView1?.curveView?.setFlg(val: displayBuffCount)
             drawView1?.points = points_i
-        } else if displayMode == 1 { // III
+        }
+        else if displayMode == 1 { //
+            drawView1?.curveView?.setFlg(val: displayBuffCount)
+            drawView1?.points = points_ii
+        }
+        else if displayMode == 2 { // III
             drawView1?.curveView?.setFlg(val: displayBuffCount)
             drawView1?.points = points_iii
-        } else if displayMode == 2{
+        } else if displayMode == 3{
             drawView1?.curveView?.setFlg(val: displayBuffCount)
             drawView1?.points = points_avr
-        } else if displayMode == 3 {
+        } else if displayMode == 4 {
             drawView1?.curveView?.setFlg(val: displayBuffCount)
             drawView1?.points = points_avl
-        } else if displayMode == 4 {
+        } else if displayMode == 5 {
             drawView1?.curveView?.setFlg(val: displayBuffCount)
             drawView1?.points = points_avf
         }
