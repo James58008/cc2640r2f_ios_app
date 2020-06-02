@@ -270,6 +270,7 @@ SWIFT_CLASS("_TtC13cc2640r2f_app14ViewController")
 - (void)buttonCallback_aVR;
 - (void)buttonCallback_aVL;
 - (void)butonCallback_aVF;
+- (void)buttonCallback_FilterSwitch;
 - (void)viewDrawTimerInterrupt;
 - (void)speedTimerInterrupt;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

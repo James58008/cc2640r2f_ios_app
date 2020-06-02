@@ -24,7 +24,7 @@ public class Draw1GridView: UIView {
         lineHorPath.lineWidth = 0.4
         let BigGrid = 25
         let LittleGrid = 5
-        for i in 0...10 {
+        for i in 0...7 {
             lineHorPath.move(to: CGPoint.init(x: 0, y: i*BigGrid))
             lineHorPath.addLine(to: CGPoint.init(x: 390, y: i*BigGrid))
         }

@@ -42,6 +42,7 @@
 		0E2ABCAA2456930F0015CAD4 /* BleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
 		0E2ABCB02456BA710015CAD4 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		0E2ABCB22456BB5B0015CAD4 /* 1LeadECG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1LeadECG.swift; sourceTree = "<group>"; };
+		0E785D79248212EF0031767F /* cc2640r2f_app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cc2640r2f_app-Bridging-Header.h"; sourceTree = "<group>"; };
 		0ED78B1B2455353300264A86 /* cc2640r2f_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cc2640r2f_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED78B1E2455353300264A86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ED78B222455353300264A86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 				0ED78B292455353500264A86 /* LaunchScreen.storyboard */,
 				0ED78B2C2455353500264A86 /* Info.plist */,
 				0E2ABCB22456BB5B0015CAD4 /* 1LeadECG.swift */,
+				0E785D79248212EF0031767F /* cc2640r2f_app-Bridging-Header.h */,
 			);
 			path = cc2640r2f_app;
 			sourceTree = "<group>";
@@ -139,6 +141,7 @@
 				TargetAttributes = {
 					0ED78B1A2455353300264A86 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -326,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLZKX7P93F;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -340,6 +344,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "james.cc2640r2f-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cc2640r2f_app/cc2640r2f_app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -349,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VLZKX7P93F;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -363,6 +370,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "james.cc2640r2f-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cc2640r2f_app/cc2640r2f_app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

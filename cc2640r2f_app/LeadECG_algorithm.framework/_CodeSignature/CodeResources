@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
 		<data>
-		dbAXNanbe7KI6MoPlzwDvs2A6ek=
+		QKgm6F6qeUnSgoyiDZGmbXQp/5U=
 		</data>
 		<key>Frameworks/CryptoSwift.framework/Info.plist</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/LeadECG_algorithm.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		DQqTxmPfWt9TYHnFDz8mVeBajYw=
+		lqSBOggClI70sO+2orO3zfvuQrY=
 		</data>
 		<key>Modules/LeadECG_algorithm.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		DQqTxmPfWt9TYHnFDz8mVeBajYw=
+		lqSBOggClI70sO+2orO3zfvuQrY=
 		</data>
 		<key>Modules/LeadECG_algorithm.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/LeadECG_algorithm.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rvk8z2BAt/cEuMrkjDcv/TRR1LY=
+		+KOiarTx1CFKYYWZEu/g7S5LPGI=
 		</data>
 		<key>Modules/LeadECG_algorithm.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/LeadECG_algorithm.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		rvk8z2BAt/cEuMrkjDcv/TRR1LY=
+		+KOiarTx1CFKYYWZEu/g7S5LPGI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,11 +63,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dbAXNanbe7KI6MoPlzwDvs2A6ek=
+			QKgm6F6qeUnSgoyiDZGmbXQp/5U=
 			</data>
 			<key>hash2</key>
 			<data>
-			OGHwxXysGXo09f3mU/NdfmV44epXXHVJ+hnmfjt/rlI=
+			dqp9nW/WjamTflpj6Cm5xiaW8wwzkIA3aK5b7NAO0LM=
 			</data>
 		</dict>
 		<key>Frameworks/CryptoSwift.framework/Info.plist</key>
@@ -118,22 +118,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DQqTxmPfWt9TYHnFDz8mVeBajYw=
+			lqSBOggClI70sO+2orO3zfvuQrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			FnBkry9QFVtRtoTrscpep9Sq3jK6eSDckThnIw2v4iE=
+			88P/JhtgUjH0MRAFEM9GgpY8iTVnKGGojyp/y41Y0L4=
 			</data>
 		</dict>
 		<key>Modules/LeadECG_algorithm.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DQqTxmPfWt9TYHnFDz8mVeBajYw=
+			lqSBOggClI70sO+2orO3zfvuQrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			FnBkry9QFVtRtoTrscpep9Sq3jK6eSDckThnIw2v4iE=
+			88P/JhtgUjH0MRAFEM9GgpY8iTVnKGGojyp/y41Y0L4=
 			</data>
 		</dict>
 		<key>Modules/LeadECG_algorithm.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -151,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rvk8z2BAt/cEuMrkjDcv/TRR1LY=
+			+KOiarTx1CFKYYWZEu/g7S5LPGI=
 			</data>
 			<key>hash2</key>
 			<data>
-			56CAgF0+KlDCpFoOUVikoE2abMEcebD5b/iIXH0zddg=
+			4p00v/6T7QDRMp8bDZ75hECBxoqoCzBdswfsUkwBmIQ=
 			</data>
 		</dict>
 		<key>Modules/LeadECG_algorithm.swiftmodule/arm64.swiftdoc</key>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rvk8z2BAt/cEuMrkjDcv/TRR1LY=
+			+KOiarTx1CFKYYWZEu/g7S5LPGI=
 			</data>
 			<key>hash2</key>
 			<data>
-			56CAgF0+KlDCpFoOUVikoE2abMEcebD5b/iIXH0zddg=
+			4p00v/6T7QDRMp8bDZ75hECBxoqoCzBdswfsUkwBmIQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

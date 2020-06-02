@@ -9,6 +9,8 @@
 import UIKit
 import LeadECG_algorithm
 
+@_silgen_name("test_c") func test_c() -> Int
+
 class ViewController: UIViewController {
     
     var queue = Queue<ECG_Data>()
@@ -32,6 +34,7 @@ class ViewController: UIViewController {
     var displayMode: Int = 0
     var displayDownSample: Int = 0
     var displayBuffCount: Int = 0
+    var filterMode: Int = 0
     
     var disBuff_i = [Double](repeating: 0.0, count: 3900)
     var disBuff_ii = [Double](repeating: 0.0, count: 3900)
@@ -79,7 +82,7 @@ class ViewController: UIViewController {
 //        self.view.addSubview(drawView2!)
         // 窗口波形显示信息
         view1MsgLabel = creatLabel(text: "I", x: 20, y: 105, w: 100, h: 20)
-//        view2MsgLabel = creatLabel(text: "II", x: 20, y: 315, w: 100, h: 20)
+        view2MsgLabel = creatLabel(text: "CWT", x: 20, y: 130, w: 100, h: 20)
         // 窗口波形单位
         let cnt = 205
         viewRulerLabel = creatLabel(text: "10mm/mV 25mm/S", x: 135, y: 520-cnt, w: 200, h: 20)
@@ -91,6 +94,8 @@ class ViewController: UIViewController {
         creatButton(title: "显示aVR", x: 15, y: 630-cnt, w: 100, h: 50, action: #selector(buttonCallback_aVR))
         creatButton(title: "显示aVL", x: 155, y: 630-cnt, w: 100, h: 50, action: #selector(buttonCallback_aVL))
         creatButton(title: "显示aVF", x: 295, y: 630-cnt, w: 100, h: 50, action: #selector(butonCallback_aVF))
+        
+        creatButton(title: "滤波器切换", x: 15, y: 700-cnt, w: 100, h: 50, action: #selector(buttonCallback_FilterSwitch))
         
         // ble
         ble.logPrint = { (backMsg) in
@@ -104,6 +109,8 @@ class ViewController: UIViewController {
             
         }
         ble.bleManagerInit() // 打开ble
+        filterMode = 1
+        algorithm.ECG_SetFilterMode(mode: 1)
 
     }
     // 显示I
@@ -137,6 +144,18 @@ class ViewController: UIViewController {
         view1MsgLabel.text = "aVF"
     }
     
+    @objc func buttonCallback_FilterSwitch() {
+        if filterMode == 0 {
+            filterMode = 1
+            view2MsgLabel.text = "CWT"
+            algorithm.ECG_SetFilterMode(mode: 1)
+        } else {
+            filterMode = 0
+            view2MsgLabel.text = "IIR"
+            algorithm.ECG_SetFilterMode(mode: 0)
+        }
+    }
+    
     // ble msg
     func bleMsg(msg: String) {
         bleLabel.text = msg
@@ -144,7 +163,7 @@ class ViewController: UIViewController {
     func bleStatus(status: UInt8) {
         if status == 1 { // 开始监听数据
             receiveCount = 0
-            displayMode = 0
+//            displayMode = 0
             displayDownSample = 0
             displayBuffCount = 0
             speedTimerStart()

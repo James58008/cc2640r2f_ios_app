@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
 		<data>
-		C5+UtQocfoI1mjv1B4ZeigOq3MY=
+		w2noEu6LQ9njSrZnRXhQkchHPEE=
 		</data>
 		<key>Frameworks/CryptoSwift.framework/Info.plist</key>
 		<data>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C5+UtQocfoI1mjv1B4ZeigOq3MY=
+			w2noEu6LQ9njSrZnRXhQkchHPEE=
 			</data>
 			<key>hash2</key>
 			<data>
-			lerOGUfKQvMLtWG/fe4kLQJGJFojSLUzKjtDglDhG9M=
+			FPk+AU6hy9XQzBGfzWOiSrNuVb6J0EiiJlZHze4QgBc=
 			</data>
 		</dict>
 		<key>Frameworks/CryptoSwift.framework/Info.plist</key>
