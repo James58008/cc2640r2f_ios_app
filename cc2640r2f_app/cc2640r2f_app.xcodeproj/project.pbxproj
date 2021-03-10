@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E2ABCA5245692460015CAD4 /* LeadECG_algorithm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2ABC882455D2420015CAD4 /* LeadECG_algorithm.framework */; };
-		0E2ABCA6245692460015CAD4 /* LeadECG_algorithm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2ABC882455D2420015CAD4 /* LeadECG_algorithm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E2ABCAB2456930F0015CAD4 /* BleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2ABCAA2456930F0015CAD4 /* BleManager.swift */; };
-		0E2ABCAE2456B6160015CAD4 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2ABCA1245690E00015CAD4 /* CryptoSwift.framework */; };
-		0E2ABCAF2456B6160015CAD4 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2ABCA1245690E00015CAD4 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E2ABCB12456BA710015CAD4 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2ABCB02456BA710015CAD4 /* Queue.swift */; };
 		0E2ABCB32456BB5B0015CAD4 /* 1LeadECG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2ABCB22456BB5B0015CAD4 /* 1LeadECG.swift */; };
 		0ED78B1F2455353300264A86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED78B1E2455353300264A86 /* AppDelegate.swift */; };
@@ -21,24 +17,7 @@
 		0ED78B2B2455353500264A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED78B292455353500264A86 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		0E2ABCA7245692470015CAD4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0E2ABCA6245692460015CAD4 /* LeadECG_algorithm.framework in Embed Frameworks */,
-				0E2ABCAF2456B6160015CAD4 /* CryptoSwift.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		0E2ABC882455D2420015CAD4 /* LeadECG_algorithm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LeadECG_algorithm.framework; sourceTree = "<group>"; };
-		0E2ABCA1245690E00015CAD4 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = "<group>"; };
 		0E2ABCAA2456930F0015CAD4 /* BleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
 		0E2ABCB02456BA710015CAD4 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		0E2ABCB22456BB5B0015CAD4 /* 1LeadECG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1LeadECG.swift; sourceTree = "<group>"; };
@@ -57,8 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E2ABCA5245692460015CAD4 /* LeadECG_algorithm.framework in Frameworks */,
-				0E2ABCAE2456B6160015CAD4 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +45,6 @@
 		0E2ABC872455D2420015CAD4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E2ABCA1245690E00015CAD4 /* CryptoSwift.framework */,
-				0E2ABC882455D2420015CAD4 /* LeadECG_algorithm.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,7 +93,6 @@
 				0ED78B172455353300264A86 /* Sources */,
 				0ED78B182455353300264A86 /* Frameworks */,
 				0ED78B192455353300264A86 /* Resources */,
-				0E2ABCA7245692470015CAD4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

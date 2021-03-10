@@ -28,61 +28,9 @@
 		<data>
 		d7+QZIm/fSgBGKqJYeySxtlRhrQ=
 		</data>
-		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
-		<data>
-		9XVb03ZvcckQcaFMbQzupisp0Xc=
-		</data>
-		<key>Frameworks/CryptoSwift.framework/Info.plist</key>
-		<data>
-		3rY79q52cD9R5IerR/tFEoNcEcg=
-		</data>
-		<key>Frameworks/CryptoSwift.framework/_CodeSignature/CodeResources</key>
-		<data>
-		QmVEr3fBkl1LYDfH3RcJ+SXTxSA=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/CryptoSwift</key>
-		<data>
-		w2noEu6LQ9njSrZnRXhQkchHPEE=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/Info.plist</key>
-		<data>
-		3rY79q52cD9R5IerR/tFEoNcEcg=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/_CodeSignature/CodeResources</key>
-		<data>
-		QmVEr3fBkl1LYDfH3RcJ+SXTxSA=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/Info.plist</key>
-		<data>
-		47vEOwOLq15XFdiZ7jNkbRg4t2s=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/LeadECG_algorithm</key>
-		<data>
-		Uv9BQ/HbE4HoF6I9IQExu4UyqzY=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		EIKLrwklt87zc/Gm+Ls/oIvAhdA=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		AgzFyCYs7VF2I5P0Hs2lqGyYfi0=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		ujhG49doGKZjg3D25iAoauY9P3U=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeResources</key>
-		<data>
-		EAhGvX6Q/IJLLtkjHBYaaKd/9fY=
-		</data>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		vI2lbGviBd63hxWxTFPVJkT/AHw=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		lhNOdUcxW6cNzBng7DJcVaDwkBU=
+		8b8msEE6/r7I3FT/A6qJalihm/E=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -90,7 +38,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		jqI0QVQMITMkgtLfEKIfQpZjOyU=
+		4eiWW/kGw0gYC9rGt+4GieUDPIc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -137,102 +85,11 @@
 			POivZvdMDK8HWa3E4m/zp3DKvLp32fyjepIDOlUWCGY=
 			</data>
 		</dict>
-		<key>Frameworks/CryptoSwift.framework/CryptoSwift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M+VrbCkHAr7Sj55ufkn2pJu6ib7fL4r5ivXLbuOGHao=
-			</data>
-		</dict>
-		<key>Frameworks/CryptoSwift.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kFIG80A1kT/mEFqa/CvjHa21KA6W+5nNY4ES3hGmcfI=
-			</data>
-		</dict>
-		<key>Frameworks/CryptoSwift.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GQ8LgYlrSwKwGOS/m8HpJ3WKb/ljb3ubELLCaBbQkvU=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/CryptoSwift</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FPk+AU6hy9XQzBGfzWOiSrNuVb6J0EiiJlZHze4QgBc=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kFIG80A1kT/mEFqa/CvjHa21KA6W+5nNY4ES3hGmcfI=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/Frameworks/CryptoSwift.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GQ8LgYlrSwKwGOS/m8HpJ3WKb/ljb3ubELLCaBbQkvU=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OjYIQNVdAKk9/8mkQz6BN96IoBi5FAOcjaftadOfnGk=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/LeadECG_algorithm</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EMIEeV8VSeZbAP/8OcdflMQBxBW8A+44l1RHj6vGp1U=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UwsAS+19j7mBFY3Jmm/k7pcD0gIVbrQ5bPx1iMuwiN8=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			C+evK9oFayO06NV+1Xelgq9lzO9kn+G9cJbt8uXylHE=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QXRZFFdtxHKsvavYSWcdsssMozNSL9nkr+iKgYJldZU=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uMXztu3ipAxYJCh+VBhx0Opt/65eDOphHbkxEi75qnQ=
-			</data>
-		</dict>
-		<key>Frameworks/LeadECG_algorithm.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ybAYi7p/pdue1KRJ+HiEwRAWp+ZdlwOg2DVbU9uzjxY=
-			</data>
-		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R1ATsVfShRhk08ltnS4od8tnmX/WOIaOcuGAK8RT+6k=
+			T/V97kom7YCqq6HfXvzBXVcyxuD1oIyHwUVAWaZHczs=
 			</data>
 		</dict>
 	</dict>

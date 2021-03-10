@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LeadECG_algorithm
 
 @_silgen_name("test_c") func test_c() -> Int
 
@@ -18,7 +17,6 @@ class ViewController: UIViewController {
     var drawView1: DrawSingleView?
 //    var drawView2: DrawSingleView?
     
-    let algorithm = ECG_Interface()
     let ble = BleManager()
     
     var speedTimer = Timer()
@@ -34,7 +32,6 @@ class ViewController: UIViewController {
     var displayMode: Int = 0
     var displayDownSample: Int = 0
     var displayBuffCount: Int = 0
-    var filterMode: Int = 0
     
     var disBuff_i = [Double](repeating: 0.0, count: 3900)
     var disBuff_ii = [Double](repeating: 0.0, count: 3900)
@@ -67,14 +64,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        // ecg process callback
-        algorithm.setCallBack(callBack: ecgProcessResultCallback)
         // ble msg
         bleLabel = creatLabel(text: "搜索ECG设备...", x: 15, y: 50, w: 300, h: 20)
         // 通信速率
         speedLabel = creatLabel(text: "通信速率：", x: 15, y: 75, w: 200, h: 20)
         // ver
-        verLabel = creatLabel(text: algorithm.getVer(), x: 350, y: 75, w: 100, h: 20)
+        verLabel = creatLabel(text: "V2.0", x: 350, y: 75, w: 100, h: 20)
         //波形显示窗口
         drawView1 = DrawSingleView.init(frame: CGRect.init(x: 10, y: 100, width: 390, height: 200))
         self.view.addSubview(drawView1!)
@@ -82,7 +77,7 @@ class ViewController: UIViewController {
 //        self.view.addSubview(drawView2!)
         // 窗口波形显示信息
         view1MsgLabel = creatLabel(text: "I", x: 20, y: 105, w: 100, h: 20)
-        view2MsgLabel = creatLabel(text: "CWT", x: 20, y: 130, w: 100, h: 20)
+//        view2MsgLabel = creatLabel(text: "CWT", x: 20, y: 130, w: 100, h: 20)
         // 窗口波形单位
         let cnt = 205
         viewRulerLabel = creatLabel(text: "10mm/mV 25mm/S", x: 135, y: 520-cnt, w: 200, h: 20)
@@ -94,9 +89,6 @@ class ViewController: UIViewController {
         creatButton(title: "显示aVR", x: 15, y: 630-cnt, w: 100, h: 50, action: #selector(buttonCallback_aVR))
         creatButton(title: "显示aVL", x: 155, y: 630-cnt, w: 100, h: 50, action: #selector(buttonCallback_aVL))
         creatButton(title: "显示aVF", x: 295, y: 630-cnt, w: 100, h: 50, action: #selector(butonCallback_aVF))
-        
-        creatButton(title: "滤波器切换", x: 15, y: 700-cnt, w: 100, h: 50, action: #selector(buttonCallback_FilterSwitch))
-        
         // ble
         ble.logPrint = { (backMsg) in
             self.bleMsg(msg: backMsg)
@@ -109,8 +101,6 @@ class ViewController: UIViewController {
             
         }
         ble.bleManagerInit() // 打开ble
-        filterMode = 1
-        algorithm.ECG_SetFilterMode(mode: 1)
 
     }
     // 显示I
@@ -144,18 +134,6 @@ class ViewController: UIViewController {
         view1MsgLabel.text = "aVF"
     }
     
-    @objc func buttonCallback_FilterSwitch() {
-        if filterMode == 0 {
-            filterMode = 1
-            view2MsgLabel.text = "CWT"
-            algorithm.ECG_SetFilterMode(mode: 1)
-        } else {
-            filterMode = 0
-            view2MsgLabel.text = "IIR"
-            algorithm.ECG_SetFilterMode(mode: 0)
-        }
-    }
-    
     // ble msg
     func bleMsg(msg: String) {
         bleLabel.text = msg
@@ -176,27 +154,37 @@ class ViewController: UIViewController {
     }
     
     // ble Data
+    // 蓝牙接收的数据在这里处理
+    // 每包数据200字节，16bit有符号数据，小端模式，前100字节I导数据，后100字节II导数据
     func bleDataProcess(bleData: [UInt8]) {
         receiveCount += Int(bleData.count)
-        // 数据处理
-        algorithm.ECG_Process(ecgData: bleData)
-    }
-    
-    // ecg信号处理结果
-    func ecgProcessResultCallback(i: [Double], ii: [Double], iii: [Double], avr: [Double], avl: [Double], avf: [Double]) {
+        
         var ecg_data: ECG_Data = ECG_Data(i: 0, ii: 0, iii: 0, avr: 0, avl: 0, avf: 0)
+        
+        var k: Int = 0
+        var ecg_i = [Int16](repeating: 0, count: 50)
+        var ecg_ii = [Int16](repeating: 0, count: 50)
 
-        for k in 0...49 {
-            ecg_data.i = i[k]
-            ecg_data.ii = ii[k]
-            ecg_data.iii = iii[k]
-            ecg_data.avr = avr[k]
-            ecg_data.avl = avl[k]
-            ecg_data.avf = avf[k]
+        // 数据处理
+        for i in 0...49 {
+            ecg_i[i] = Int16(bleData[k]);
+            ecg_i[i] |= Int16(bleData[k+1]) << 8
+            ecg_ii[i] = Int16(bleData[k+100])
+            ecg_ii[i] |= Int16(bleData[k+1+100]) << 8
+            k = k + 2
+            // set data
+            ecg_data.i = Double(ecg_i[i])
+            ecg_data.ii = Double(ecg_ii[i])
+            ecg_data.iii = ecg_data.ii - ecg_data.i
+            ecg_data.avr = (-1) * ((ecg_data.i+ecg_data.ii)/2)
+            ecg_data.avl = ecg_data.ii - (ecg_data.i/2)
+            ecg_data.avf = ecg_data.i - (ecg_data.ii/2)
             queue.enqueue(element: ecg_data)
         }
-        
+//        algorithm.ECG_Process(ecgData: bleData)
     }
+    
+
     
     // 波形显示定时器
     func viewDrawTimerStart() {
@@ -212,7 +200,7 @@ class ViewController: UIViewController {
         var points_avl:[CGPoint] = []
         var points_avf:[CGPoint] = []
 //        print(queue.count)
-        let th: Double = 40
+        let th: Double = 0.1
         while queue.count > 0 {
                 ecg_data = queue.dequeue()
                 disBuff_i[displayBuffCount] = ecg_data.i * th
